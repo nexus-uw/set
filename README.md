@@ -3,7 +3,7 @@ set
 
 ### What is this?
 
-a (dumb) implementation of the game of set in Typescript
+A (dumb) implementation of the game of set in Typescript
 
 
 ### How to run
@@ -22,10 +22,10 @@ I constantly rescan the board looking at cards. If I were to build up a hash map
 I wanted a nice 'computer science' type project to get my brain to sweat a bit. Also, playing this game is hard and frustrating, it is a job for computers.
 
 ### How long did it take to code up? 
-about 6hrs over a period of a day
+About 6hrs over a period of a day
 
 ### next steps
-allow for arbiratry set size and properties to match on
-switch from single threaded execution to parrallel  (and maybe even distributed)
-get smart with the matching algorithim 
-try to match all cards into sets (ie: 100%)
+- allow for arbiratry set size and properties to match on
+- switch from single threaded execution to parrallel  (and maybe even distributed)
+- get smart with the matching algorithim 
+- try to match all cards into sets (ie: 100%)
