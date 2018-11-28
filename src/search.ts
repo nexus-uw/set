@@ -1,6 +1,7 @@
-import { Board, Set } from "./types";
-import { checkCards } from "./compare";
+
 import { SET_SIZE } from "./constants";
+import {Board, Set} from "./types"
+import {checkCards} from './compare'
 
 export function findSet(size: number, board: Board, inprogressSet: Set = []): Set {
 
@@ -31,7 +32,7 @@ export function findSet(size: number, board: Board, inprogressSet: Set = []): Se
     for (let x = startX; x < size; x++) {
 
         for (let y = (x === startX ? startY : 0); y < size; y++) {
-            if (x === startX && y === startY) {
+           if (inprogressSet.length > 0 && x === startX && y === startY) {
                 continue; // dont compare against self 
             } else if (inprogressSet.length < SET_SIZE) {
                 const set = findSet(size, board, [...inprogressSet, { x, y, card: board[x][y] }]);
